@@ -2,7 +2,7 @@ let valoresUsuario = [];
 
 function crearUsuario() {
     valoresUsuario.push(parseInt(prompt("Bienvenido al simulador financiero, donde proyectaremos cuánto dinero tenés que ahorrar para vivir sin trabajar. Ahora contanos cuántos dólares por mes gastás en alquiler")));
-    valoresUsuario.push(parseInt(prompt("Ahora contanos cuántos dólares por mes gastás en educación de todos los miembros de tu familia")));
+    valoresUsuario.push(parseInt(prompt("Ahora contanos cuántos dólares por mes gastás en Honorarios No Salariales de Che Pibes")));
     valoresUsuario.push(parseInt(prompt("Ahora contanos cuántos dólares por mes gastás en salidas")));
     valoresUsuario.push(parseInt(prompt("Ahora contanos cuántos dólares por mes gastás en supermercado")));
     valoresUsuario.push(parseInt(prompt("Ahora contanos cuántos dólares por mes gastás en salud")));
