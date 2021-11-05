@@ -10,9 +10,29 @@
       </div>
     </div>
     <div class="white-container">
-        <h1>Bienvenido al Simulador Financiero de Camilo Heller. Primero, hace clic en empezar preguntas.</h1>
-        <button class="links" onclick="crearUsuario()">Empezar preguntas</button>
-        <h1>Después, hacé clic en mostrar resultado según tu perfil de inversor</h1>
+      <h1>Bienvenido al Simulador Financiero de Camilo Heller.</h1>
+      <h1>Si ya lo usaste antes, recordá los gastos que declaraste la última vez haciendo clic aquí:</h1>
+      <button class="links" onclick="mostrarUltimoResultado()">Mostrar último resultado</button>
+      <h2 id="ultimoResultado"></h2>
+      <br><h1>Para hacer el test nuevamente, completá tus gastos en el formulario.</h1>
+      <form>
+        Contanos cuántos dólares por mes gastás en alquiler:<br>
+        <input type="text" id ="gastoAlquiler" name="gastoAlquiler" value="0">
+        <br>
+        Cuántos dólares por mes gastás en educación:<br>
+        <input type="text" id ="gastoEducacion" name="gastoEducacion" value="0">
+        <br>
+        Cuántos dólares por mes gastás en salidas:<br>
+        <input type="text" id ="gastoSalidas" name="gastoSalidas" value="0">
+        <br>
+        Cuántos dólares por mes gastás en supermercado:<br>
+        <input type="text" id ="gastoSupermercado" name="gastoSupermercado" value="0">
+        <br>
+        Cuántos dólares por mes gastás en salud:<br>
+        <input type="text" id ="gastoSalud" name="gastoSalud" value="0">
+        <br>
+      </form> 
+              <h1>Después, hacé clic en mostrar resultado según tu perfil de inversor</h1>
         <button class="links" onclick="mostrarResultadoConservador()">Mostrar resultado perfil conservador</button>
         <button class="links" onclick="mostrarResultadoMedio()">Mostrar resultado perfil medio</button>
         <button class="links" onclick="mostrarResultadoAgresivo()">Mostrar resultado perfil agresivo</button>
