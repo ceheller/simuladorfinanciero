@@ -1,0 +1,16 @@
+
+
+body {
+color: white;
+background-color:darkslategray;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 95vh;
+    border-top: 15px solid white;
+    border-bottom: 15px solid white;
+}

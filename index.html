@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="script.js"></script>
+    <title>Simulador Financiero de Camilo Heller </title>
+  </head>
+  <body>
+    <div id="header" class="section">
+      <div class="white-container">
+      <h1>Bienvenido/a al Simulador Financiero de Camilo Heller.</h1>
+      <button id="goToMain" class="links">Comenzar simulador</button>
+      <br>
+      <h1>Si ya lo usaste antes, recordá los valores utilizados la última vez haciendo clic aquí:</h1>
+      <button id="mostrarUltimo">Mostrar último resultado</button>
+      <h2 id="ultimoResultado"></h2>
+      </div>
+    </div>
+    <div id="main" class="section">
+      <br><h1>Para hacer el test nuevamente, completá tus gastos en el formulario.</h1>
+      <form>
+        Contanos cuántos dólares por mes gastás en alquiler:<br>
+        <input type="text" id ="gastoAlquiler" name="gastoAlquiler" value="0">
+        <br>
+        Cuántos dólares por mes gastás en educación:<br>
+        <input type="text" id ="gastoEducacion" name="gastoEducacion" value="0">
+        <br>
+        Cuántos dólares por mes gastás en salidas:<br>
+        <input type="text" id ="gastoSalidas" name="gastoSalidas" value="0">
+        <br>
+        Cuántos dólares por mes gastás en supermercado:<br>
+        <input type="text" id ="gastoSupermercado" name="gastoSupermercado" value="0">
+        <br>
+        Cuántos dólares por mes gastás en salud:<br>
+        <input type="text" id ="gastoSalud" name="gastoSalud" value="0">
+        <br>
+      </form> 
+      <br>
+      <button id="goToResults" class="links">Continuar</button>
+    </div>
+    <div id="results" class="section">
+        <h1>Después, hacé clic en mostrar resultado según tu perfil de inversor</h1>
+        <button id="resultadoConservador" class="links">Mostrar el resultado si invertís en propiedades</button>
+        <button id="resultadoMedio" class="links">Mostrar el resultado si invertís en la bolsa</button>
+        <button id="resultadoAgresivo" class="links">Mostrar resultado si invertís en Bitcoin</button>
+        <h1 id="resultado">Finalmente, podrás visualizar el resultado aquí.</h1>
+      </div>
+      <div class="footer">
+        <p>Simulador financiero de Camilo Heller. Todos los derechos reservados. </p>
+      </div>
+
+  </body>
+</html>
