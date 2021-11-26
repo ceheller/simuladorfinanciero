@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="script.js"></script>
@@ -20,6 +21,19 @@
       </div>
     </div>
     <div id="main" class="section">
+=======
+    <title>Simulador Financiero de Camilo Heller </title>
+  </head>
+  <body>
+    <div class="header">
+      </div>
+    </div>
+    <div class="white-container">
+      <h1>Bienvenido al Simulador Financiero de Camilo Heller.</h1>
+      <h1>Si ya lo usaste antes, recordá los gastos que declaraste la última vez haciendo clic aquí:</h1>
+      <button class="links" onclick="mostrarUltimoResultado()">Mostrar último resultado</button>
+      <h2 id="ultimoResultado"></h2>
+>>>>>>> d8437fa94cf4e0cc8171e48a8d66cb071ca5546b
       <br><h1>Para hacer el test nuevamente, completá tus gastos en el formulario.</h1>
       <form>
         Contanos cuántos dólares por mes gastás en alquiler:<br>
@@ -38,6 +52,7 @@
         <input type="text" id ="gastoSalud" name="gastoSalud" value="0">
         <br>
       </form> 
+<<<<<<< HEAD
       <br>
       <button id="goToResults" class="links">Continuar</button>
     </div>
@@ -52,5 +67,14 @@
         <p>Simulador financiero de Camilo Heller. Todos los derechos reservados. </p>
       </div>
 
+=======
+              <h1>Después, hacé clic en mostrar resultado según tu perfil de inversor</h1>
+        <button class="links" onclick="mostrarResultadoConservador()">Mostrar resultado perfil conservador</button>
+        <button class="links" onclick="mostrarResultadoMedio()">Mostrar resultado perfil medio</button>
+        <button class="links" onclick="mostrarResultadoAgresivo()">Mostrar resultado perfil agresivo</button>
+        <h1 id="resultado">Finalmente, podrás visualizar el resultado aquí.</h1>
+      </div>
+    <script src="script.js"></script>
+>>>>>>> d8437fa94cf4e0cc8171e48a8d66cb071ca5546b
   </body>
 </html>
