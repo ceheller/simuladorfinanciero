@@ -6,6 +6,7 @@ background-color:darkslategray;
 }
 
 .section {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,5 +22,6 @@ background-color:darkslategray;
     .section {
         margin-left: 5vh;
         margin-right: 5vh;
+        padding-bottom: 30%;
     }
 }
