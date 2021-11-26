@@ -18,8 +18,8 @@ background-color:darkslategray;
 
 @media only screen and (max-width: 650px) {
     .section {
+        position: relative;
         height: 100%;
         margin-left: 20%;
-        margin-right: 20%;
     }
 }
