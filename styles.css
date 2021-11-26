@@ -18,6 +18,7 @@ background-color:darkslategray;
 
 @media only screen and (max-width: 650px) {
     .section {
+        height: 95vh;
         margin-left: 10vh;
         margin-right: 10vh;
     }
