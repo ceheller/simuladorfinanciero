@@ -32,32 +32,24 @@ function addExpenses() {
     return monthlyBudget;
 };
 
-function showResult(part1, part2, part3) {
+function showResult(param1) {
     let monthlyBudget2 = addExpenses();
     part1 = "Según nuestros cálculos, tus gastos mensuales ascienden a USD " + monthlyBudget2 + ". Teniendo ello presente, necesitarás ahorrar ";
-    part2 = Math.round(((monthlyBudget * 12) / 3) * 100);
-    part3 = " dólares, invertidos a una tasa del 3% en el mercado inmobiliario, para vivir sin trabajar."
+    part2 = Math.round(((monthlyBudget * 12) / param1) * 100);
+    part3 = " dólares invertidos, para vivir sin trabajar."
     document.getElementById("result").innerHTML = part1 + part2 + part3;
     const User = { "rent": rentBudget, "education": educationBudget, "goingOut": goingOutBudget, "supermarket": supermarketBudget, "health": healthBudget };
     const UserJson = JSON.stringify(User);
-    localStorage.setItem("User", UserJson);
-} ;
+    localStorage.setItem("User", UserJson);    
+}
 
 $(document).ready(function() {
     $("#conservativeResult").click(function () {
-        let monthlyBudget2 = addExpenses();
-        document.getElementById("result").innerHTML = "Según nuestros cálculos, tus gastos mensuales ascienden a USD " + monthlyBudget2 + ". Teniendo ello presente, necesitarás ahorrar " + Math.round(((monthlyBudget * 12) / 3) * 100) + " dólares, invertidos a una tasa del 3% en el mercado inmobiliario, para vivir sin trabajar.";
-        const User = { "rent": rentBudget, "education": educationBudget, "goingOut": goingOutBudget, "supermarket": supermarketBudget, "health": healthBudget };
-        const UserJson = JSON.stringify(User);
-        localStorage.setItem("User", UserJson);
+    showResult(3);
     });
 
     $("#middleRiskResult").click(function () {
-        let monthlyBudget2 = addExpenses();
-        document.getElementById("result").innerHTML = "Según nuestros cálculos, tus gastos mensuales ascienden a USD " + monthlyBudget2 + ". Teniendo ello presente, necesitarás ahorrar " + Math.round(((monthlyBudget * 12) / 9) * 100) + " dólares, invertidos a una tasa del 9% en el mercado de obligaciones negociables de renta fija, para vivir sin trabajar.";
-        const User = { "rent": rentBudget, "education": educationBudget, "goingOut": goingOutBudget, "supermarket": supermarketBudget, "health": healthBudget };
-        const UserJson = JSON.stringify(User);
-        localStorage.setItem("User", UserJson);
+    showResult(9);
     });
 
     $("#agressiveResult").click(function () {
